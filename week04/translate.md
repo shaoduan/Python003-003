@@ -1,3 +1,4 @@
+```
 1. SELECT * FROM data;
 df2
 
@@ -29,3 +30,4 @@ df2.drop(index=[10], inplace=True)
 
 10. ALTER TABLE table1 DROP COLUMN column_name;
 df2.drop(columns=[column_name], inplace=True)
+```
