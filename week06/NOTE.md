@@ -30,13 +30,11 @@ python manage.py sqlmigrate  appname 0001 查看做了哪些修改
 运行 python manage.py migrate 来应用数据库迁移。
 ```
 
+4. template
 ```
 # tags and filters
 # https://docs.djangoproject.com/zh-hans/2.2/ref/templates/builtins/#std:templatetag-comment
-```
 
-<h4>注释</h4>
-```
 <!-- 单行注释 -->
 {# greeting #}
 
@@ -44,10 +42,8 @@ python manage.py sqlmigrate  appname 0001 查看做了哪些修改
 {% comment "Optional note" %}
     <p>Commented out text with {{ create_date|date:"c" }}</p>
 {% endcomment %}
-```
 
 #### 块与继承
-```
 {% extends "base.html" %}  # 声明继承哪个模板 
 
 # 在父模板中声明可被子模板重写的块
@@ -59,10 +55,8 @@ python manage.py sqlmigrate  appname 0001 查看做了哪些修改
 {% endblock %}
 
 
-```
-
 #### url
-```
+
 # https://docs.djangoproject.com/zh-hans/2.2/ref/templates/builtins/#url
 # Returns an absolute path reference (a URL without the domain name) matching a given 
 # view and optional parameters. Any special characters in the resulting path will be
@@ -84,7 +78,7 @@ python manage.py sqlmigrate  appname 0001 查看做了哪些修改
 {% url 'myapp:view-name' %}
 ```
 
-# url 示例
+5. url 示例
 ```
 // https://docs.djangoproject.com/zh-hans/2.2/topics/http/urls/#url-namespaces-and-included-urlconfs
 
