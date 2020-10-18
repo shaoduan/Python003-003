@@ -4,8 +4,8 @@
 
 def mymap(func, *args):
     lenths = [ len(i) for i in args ]
-    vars = []
     for idx in range(min(lenths)):
+        vars = []
         for arg in args:
             vars.append(arg[idx])
         yield func(*vars)
